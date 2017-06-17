@@ -174,5 +174,8 @@ HELLO_bench=    BENCH
 #   Build configuration and rules
 #------------------------------------------------------------------------------
 
+# Allow configuration directory to be overriden
+CONFIG?=$(BUILD)/
+
 # Include actual configuration for specific BUILDENV - At end for overrides
-include $(BUILD)config.$(BUILDENV).mk
+include $(CONFIG)config.$(BUILDENV).mk

@@ -222,6 +222,9 @@ Some of the most useful include:
   the installation location for executables (`PREFIX_BIN`), libraries
   (`PREFIX_LIB`) or shared libraries (`PREFIX_DLL`).
 
+* `CONFIG` specifies a custom CONFIG directory. This allows for
+  limited extension of `build` without needing to fork the project,
+  primarily by providing custom config.$(BUILDENV).mk files
 
 ## Hierarchical projects
 
